@@ -1,0 +1,48 @@
+*.log
+.DS_Store
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Laravel
+.phpunit.result.cache
+/.phpunit.cache
+/storage/*.key
+/storage/framework
+/storage/logs
+/storage/pail
+/storage/app/modules
+/public/storage
+/public/build
+/public/hot
+/bootstrap/cache/*.php
+
+# Dependencies
+/node_modules
+/vendor
+
+# IDE
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.phpactor.json
+
+# Authentication / credentials
+/auth.json
+
+# OS
+Thumbs.db
+
+# Package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local development
+Homestead.json
+Homestead.yaml

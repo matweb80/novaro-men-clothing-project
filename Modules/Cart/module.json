@@ -1,0 +1,11 @@
+{
+    "name": "Cart",
+    "alias": "سبد خرید",
+    "description": "سبد خرید برای مدیریت محصولاتی که قصد خریداری آنها را دارید",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Cart\\Providers\\CartServiceProvider"
+    ],
+    "files": []
+}

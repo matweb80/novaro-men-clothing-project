@@ -1,0 +1,10 @@
+@import url('./admin/adminlte.css');
+@import url('./admin/bootstrap-rtl.min.css');
+@import url('bootstrap-rtl.min.scss');
+@import url('./admin/custom-style.css');
+
+.bg-success,
+.bg-success a
+{
+    color: black !important;
+}
