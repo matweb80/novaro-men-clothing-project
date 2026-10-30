@@ -901,18 +901,7 @@ html[dir="rtl"] .mobile-nav__row .chev {
 .pdp-gallery__stage .img-plate__photo {
     cursor: pointer;
 }
-.pdp-gallery__stage {
-    position: relative;
-    aspect-ratio: 4/5;
-    background: #edeff3;
-    border-radius: var(--r-md);
-    overflow: hidden;
-}
-.pdp-gallery__stage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 @media (min-width: 768px) {
     .img-plate__inner {
         padding: var(--sp-5);
