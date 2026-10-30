@@ -51,7 +51,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(fas, far, fab);
 //
-import "../../css/custom.css";
+import "@/assets/styles/tokens.css";
+import "@/assets/styles/components.css";
 
 async function loadMessages(locale) {
     return await fetch(`/api/vue/translations/${locale}`)

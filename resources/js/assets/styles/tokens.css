@@ -1,3 +1,6 @@
+/* Official Vazirmatn CDN, centrally loaded for the complete frontend. */
+@import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css");
+
 /* ==========================================================================
    NOVARO DESIGN SYSTEM — TOKENS
    Centralized. Do not scatter arbitrary values in component CSS below.
@@ -19,6 +22,8 @@
     --c-gold-hover: #b38b47;
     --c-danger: #a6321e;
     --c-success: #1f7a4d;
+    /* nv focus ring */
+    --nv-focus-ring: rgb(200 169 106 / 0.35);
 
     /* — Type — */
     --font: "Vazirmatn", system-ui, -apple-system, sans-serif;
@@ -110,13 +115,19 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 body {
+    min-width: 20rem;
     margin: 0;
     font-family: var(--font) !important;
     background: var(--c-bg);
     color: var(--c-text);
+    direction: rtl;
     font-size: var(--fs-body);
+    font-weight: 400;
     line-height: var(--lh-normal);
     -webkit-font-smoothing: antialiased;
+    font-feature-settings:
+        "ss01" 1,
+        "tnum" 1;
     text-rendering: optimizeLegibility;
 }
 
@@ -131,6 +142,13 @@ img {
 button {
     font-family: inherit;
 }
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    font-feature-settings: inherit;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -141,7 +159,11 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
+    margin-block: 0;
+}
+p,
+pre {
+    text-wrap: pretty;
 }
 a {
     color: inherit;
@@ -155,6 +177,16 @@ input {
 }
 svg:not(:root) {
     overflow: visible !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid var(--nv-focus-ring);
+    outline-offset: 3px;
 }
 
 ::selection {

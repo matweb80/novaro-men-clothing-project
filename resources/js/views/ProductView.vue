@@ -10,7 +10,7 @@ import {
   reactive,
 } from "vue";
 import BaseBreadcrumb from "@/components/UI/BaseBreadcrumb.vue";
-import ProductGalleryMe from "@/components/product/ProductGalleryMe.vue";
+import ProductGallery from "@/components/product/ProductGallery.vue";
 import ProductInfo from "@/components/product/ProductInfo.vue";
 import ProductDetails from "@/components/product/ProductDetails.vue";
 import RelatedProducts from "@/components/product/RelatedProducts.vue";
@@ -185,7 +185,7 @@ const stockInfo = computed(() => {
       </button>
 
       <div class="pdp container">
-        <ProductGalleryMe :product="product" />
+        <ProductGallery :product="product" />
 
         <ProductInfo
           ref="productInfoRef"

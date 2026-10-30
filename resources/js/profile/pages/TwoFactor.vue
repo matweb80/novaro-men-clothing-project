@@ -42,9 +42,9 @@
       </p>
     </div>
     <div class="form-group">
-      <base-button class="btn btn--primary" :disabled="twoFactorLoading">{{
+      <button class="btn btn--primary" :disabled="twoFactorLoading">{{
         twoFactorLoading ? "در حال ذخیره…" : "ذخیره تغییرات"
-      }}</base-button>
+      }}</button>
     </div>
     <div class="two-factor-spinner" v-if="twoFactorLoading">
       <base-spinner></base-spinner>

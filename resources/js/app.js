@@ -116,7 +116,6 @@ import { Splide, SplideSlide } from "@splidejs/vue-splide";
 //photo swipe
 import "photoswipe/style.css";
 import "../css/photoswipe-custom.css";
-import "../css/custom.css";
 import novaroFavicon from "./assets/novaro-favicon.webp";
 
 const favicon =

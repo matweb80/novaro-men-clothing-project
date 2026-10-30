@@ -5,9 +5,6 @@ import { useProductOptions } from "@/composables/useProductOptions";
 import { useProductPurchase } from "@/composables/useProductPurchase";
 import ProductPrice from "./ProductPrice.vue";
 import ProductStock from "./ProductStock.vue";
-import ProductSizeSelector from "./ProductSizeSelector.vue";
-import ProductColorSelector from "./ProductColorSelector.vue";
-import ProductQuantity from "./ProductQuantity.vue";
 import ProductPurchaseActions from "./ProductPurchaseActions.vue";
 
 const props = defineProps({
@@ -48,8 +45,6 @@ const category = items.findLast((item) => item);
     ></p>
 
     <ProductStock :tone="stockInfo.tone" :label="stockInfo.label" />
-
-    <!-- <ProductQuantity :product="product" /> -->
 
     <div>
       <ProductPurchaseActions :product="product" />

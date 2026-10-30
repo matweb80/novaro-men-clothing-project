@@ -148,9 +148,9 @@
       <li :class="{ valid: /[^A-Za-z0-9]/.test(password) }">کاراکتر خاص</li>
     </ul>
     <div class="form-group">
-      <base-button class="btn btn--primary" :disabled="infoSaving">{{
+      <button class="btn btn--primary" :disabled="infoSaving">{{
         infoSaving ? "در حال ذخیره…" : "ذخیره تغییرات"
-      }}</base-button>
+      }}</button>
     </div>
 
     <p v-if="infoSaved" class="form-success" aria-live="polite">
