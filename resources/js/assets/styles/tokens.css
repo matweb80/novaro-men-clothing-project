@@ -366,6 +366,22 @@ select:focus-visible,
 .btn--gold:hover {
     background: var(--c-gold-hover);
 }
+.btn--success {
+    background: var(--c-success);
+    color: var(--c-white);
+}
+.btn--success:hover {
+    background: #156e42;
+    color: var(--c-white);
+}
+.btn--danger {
+    background: var(--c-danger);
+    color: var(--c-white);
+}
+.btn--danger:hover {
+    background: #9e2a16;
+    color: var(--c-white);
+}
 .btn--sm {
     padding: 8px var(--sp-4);
     font-size: var(--fs-small);

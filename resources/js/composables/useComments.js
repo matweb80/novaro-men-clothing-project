@@ -38,7 +38,7 @@ export function useComments(product, user) {
                 modal.value = {
                     message: "نظر شما با موفقیت ثبت شد و پس از تایید ادمین در سایت قرار میگیرد. با تشکر از بازخورد شما🌹",
                     headerColor: "var(--accent-color)",
-                    buttonColor: "success",
+                    buttonColor: "btn--success",
                     titleText: "موفق",
                 };
 
@@ -51,7 +51,7 @@ export function useComments(product, user) {
                     "خطایی در ارسال نظر رخ داده است! لطفا دوباره تلاش کنید" ||
                     error,
                 headerColor: "var(--danger-color)",
-                buttonColor: "danger",
+                buttonColor: "btn--danger",
                 titleText: "خطا",
             };
         } finally {

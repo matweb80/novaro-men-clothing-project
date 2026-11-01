@@ -13,7 +13,7 @@ class CommentController extends Controller
     public function __construct()
     {
         $this->middleware('can:show-approved-comments')->only(['index']);
-        $this->middleware('can:show-unapproved-comments	')->only(['unapproved']);
+        $this->middleware('can:show-unapproved-comments')->only(['unapproved']);
         $this->middleware('can:edit-comment')->only(['edit', 'updateComment']);
         $this->middleware('can:approved-comment')->only(['update']);
         $this->middleware('can:delete-comment')->only(['destroy']);

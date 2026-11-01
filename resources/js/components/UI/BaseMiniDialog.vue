@@ -5,9 +5,9 @@
       <dialog open v-if="show" class="alert" :class="alertColor">
         <section>
           <slot>
-            <h6>
+            <h5>
               {{ message }}
-            </h6>
+            </h5>
           </slot>
           <slot name="actions">
             <font-awesome-icon
@@ -74,7 +74,7 @@ dialog {
   top: 2%;
   width: 250px;
   right: 30%;
-  z-index: var(--nv-z-toast);
+  z-index: var(--z-toast);
   border-radius: 12px;
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -88,7 +88,7 @@ section {
   justify-content: space-between;
 }
 
-h6 {
+h5 {
   margin: 0 !important;
 }
 

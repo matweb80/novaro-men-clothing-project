@@ -115,7 +115,7 @@ defineExpose({ open, close });
                 −
               </button>
               <select
-                class="form-control text-center border-0 item-select"
+                class="change-quantity-select form-control item-select"
                 @change="
                   changeQuantity(
                     item.id,
@@ -201,6 +201,11 @@ select.item-select {
 
 select.item-select:focus {
   box-shadow: none !important;
+}
+
+select.change-quantity-select {
+  text-align: center;
+  border: 0 !important;
 }
 
 .cart-item__media {

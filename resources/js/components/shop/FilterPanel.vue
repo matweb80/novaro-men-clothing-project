@@ -127,8 +127,8 @@
 
         <!-- Actions -->
         <div class="filter-actions" v-if="!isTablet">
-          <base-button
-            class="filter-actions__apply"
+          <button
+            class="btn btn--gold filter-actions__apply"
             @click="applyFiltersWithPrice"
           >
             <font-awesome-icon icon="fa-solid fa-check" />
@@ -136,13 +136,13 @@
             <span>
               {{ isLoading ? "در حال جستجو..." : "اعمال فیلترها" }}
             </span>
-          </base-button>
+          </button>
 
-          <base-button class="filter-actions__reset" @click="resetFilters">
+          <button class="btn filter-actions__reset" @click="resetFilters">
             <font-awesome-icon icon="fa-solid fa-rotate-right" />
 
             <span>حذف فیلترها</span>
-          </base-button>
+          </button>
         </div>
       </div>
     </div>

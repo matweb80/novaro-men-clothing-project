@@ -13,9 +13,9 @@
         </section>
         <menu v-if="!fixed">
           <slot name="actions">
-            <base-button class="danger" @click="tryClose">لغو</base-button>
-            <base-button class="active" @click="submitDialog"
-              >ارسال</base-button
+            <button class="btn btn--danger" @click="tryClose">لغو</button>
+            <button class="btn btn--success" @click="submitDialog"
+              >ارسال</button
             >
           </slot>
         </menu>
@@ -72,7 +72,7 @@ export default {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
-  z-index: calc(var(--nv-z-modal) - 1);
+  z-index: calc(var(--z-modal) - 1);
 }
 
 dialog {
@@ -80,7 +80,7 @@ dialog {
   top: 20vh;
   right: 20%;
   width: 60%;
-  z-index: var(--nv-z-modal);
+  z-index: var(--z-modal);
   border-radius: 12px;
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -99,7 +99,7 @@ header {
 
 header h3 {
   margin: 0;
-  color: var(--nv-secondary);
+  color: var(--c-white);
 }
 
 section {

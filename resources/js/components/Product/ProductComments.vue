@@ -62,13 +62,14 @@
             <h4 v-else class="comment-dialog__message">{{ modal.message }}</h4>
           </template>
           <template #actions>
-            <base-button
+            <button
               type="button"
               :class="modal.buttonColor"
+              class="btn"
               @click="closeDialog"
             >
               متوجه شدم
-            </base-button>
+            </button>
           </template>
         </base-dialog>
       </div>
@@ -100,9 +101,9 @@ function closeDialog() {
 // رنگ هدر دیالوگ از توکن‌های NOVARO (همان‌هایی که BaseButton استفاده می‌کند)؛
 // منطق useComments (modal.buttonColor = success | danger) بدون تغییر خوانده می‌شود.
 const dialogHeaderColor = computed(() => {
-  if (modal.value.buttonColor === "danger") return "var(--nv-error)";
-  if (modal.value.buttonColor === "success") return "var(--nv-success)";
-  return "var(--nv-primary)";
+  if (modal.value.buttonColor === "btn--danger") return "var(--c-danger)";
+  if (modal.value.buttonColor === "btn--success") return "var(--c-success)";
+  return "var(--c-navy)";
 });
 
 // تعداد نظرات واقعی دریافت‌شده (شامل پاسخ‌ها تا همان سقف عمق ۵ که CommentList نمایش می‌دهد)
@@ -121,15 +122,15 @@ const commentCount = computed(() => countComments(props.comments));
 <style scoped>
 .comment-section {
   /* فقط توکن‌هایی که در BaseButton/BaseDialog دیده شد (--nv-*) با fallback پالت پروتوتایپ */
-  --cs-ink: var(--nv-primary, #0f172a);
-  --cs-paper: var(--nv-secondary, #ffffff);
-  --cs-soft: var(--nv-surface-subtle, #f8fafc);
-  --cs-gold: var(--nv-gold, #c8a96a);
+  --cs-ink: var(--c-navy, #0f172a);
+  --cs-paper: var(--c-white, #ffffff);
+  --cs-soft: var(--c-bg, #f8fafc);
+  --cs-gold: var(--c-gold, #c8a96a);
   --cs-text: #1f2937;
   --cs-muted: #6b7280;
   --cs-line: #e4e8ee;
   --cs-line-strong: #cbd3df;
-  --cs-radius: var(--nv-radius-sm, 2px);
+  --cs-radius: var(--r-sm, 2px);
 
   margin-top: 3rem;
   padding-top: 2rem;
@@ -199,7 +200,7 @@ const commentCount = computed(() => countComments(props.comments));
   transition: background-color 0.2s ease;
 }
 .comment-login__link:hover {
-  background: var(--nv-gold-hover, #b38b47);
+  background: var(--c-gold-hover, #b38b47);
 }
 .comment-login__link:focus-visible {
   outline: 2px solid var(--cs-ink);

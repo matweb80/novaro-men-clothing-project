@@ -41,9 +41,19 @@
                             <td>{{$comment->user->name}}</td>
                             <td>{{$comment->comment}}</td>
                             @php
-                            $product= \App\Models\Product::where('id',$comment->commentable_id)->firstOrFail();
+                            $product = \App\Models\Product::find($comment->commentable_id);
                             @endphp
-                            <td><a href="/products/{{$product->slug}}">{{$product->title}}</a> - ({{class_basename($comment->commentable_type)}})</td>
+                            <td>
+                                @if($product)
+                                <a href="/products/{{ $product->slug }}">
+                                    {{ $product->title }}
+                                </a>
+                                @else
+                                <span class="text-danger">محصول پیدا نشد</span>
+                                @endif
+
+                                - ({{ class_basename($comment->commentable_type) }})
+                            </td>
                             @if($comment->parent_id > 0)
                             <td class="text-muted">{{$comment->parent->comment}}</td>
                             @else

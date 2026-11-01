@@ -42,7 +42,7 @@
       <base-dialog
         :show="!!replyingTo"
         :title="'ارسال پاسخ به ' + comment.user?.name"
-        header-color="var(--nv-primary)"
+        header-color="var(--c-navy)"
         @close="replyingTo = null"
         @submit-dialog="submitReply"
         :fixed="isLoading"
@@ -75,7 +75,7 @@ import CommentList from "./CommentList.vue";
 import { useProductPageAppData } from "@/composables/useProductPageAppData.js";
 import { useReplyComments } from "@/composables/useReplyComments.js";
 
-const props= defineProps({
+const props = defineProps({
   comments: Array,
   product: Object,
   level: {
@@ -83,7 +83,6 @@ const props= defineProps({
     default: 1,
   },
 });
-
 
 const { productPageIsAuthenticated, productPageUser } = useProductPageAppData();
 
@@ -99,9 +98,9 @@ function formatDate(dateStr) {
 <style scoped>
 .comment-list,
 .comment-empty {
-  --cs-ink: var(--nv-primary, #0f172a);
-  --cs-paper: var(--nv-secondary, #ffffff);
-  --cs-soft: var(--nv-surface-subtle, #f8fafc);
+  --cs-ink: var(--c-navy, #0f172a);
+  --cs-paper: var(--c-white, #ffffff);
+  --cs-soft: var(--c-bg, #f8fafc);
   --cs-text: #1f2937;
   --cs-muted: #6b7280;
   --cs-line: #e4e8ee;

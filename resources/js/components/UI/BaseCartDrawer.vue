@@ -16,7 +16,7 @@
             <div class="drawer-body">
               <div
                 v-if="cart.items.length === 0"
-                class="text-center text-muted"
+                class="empty-cart"
               >
                 <img
                   class="img-fluid object-fit-cover"
@@ -244,6 +244,10 @@ section .drawer-body {
   margin: 0 0 16px;
   overflow-y: auto !important;
   overflow-x: hidden !important;
+}
+section .drawer-body .empty-cart{
+  color: var(--c-text-muted);
+  text-align: center;
 }
 
 section .drawer-footer {
