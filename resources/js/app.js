@@ -12,14 +12,6 @@ const BaseButton = defineAsyncComponent(
     () => import("./components/UI/BaseButton.vue"),
 );
 
-const BaseButtonOutline = defineAsyncComponent(
-    () => import("./components/UI/BaseButtonOutline.vue"),
-);
-
-const BaseBox = defineAsyncComponent(
-    () => import("./components/UI/BaseBox.vue"),
-);
-
 const BaseSlider = defineAsyncComponent(
     () => import("./components/UI/BaseSlider.vue"),
 );
@@ -28,16 +20,8 @@ const BaseLogo = defineAsyncComponent(
     () => import("./components/UI/BaseLogo.vue"),
 );
 
-const BaseMobileMenuModal = defineAsyncComponent(
-    () => import("./components/UI/BaseMobileMenuModal.vue"),
-);
-
 const BaseDialog = defineAsyncComponent(
     () => import("./components/UI/BaseDialog.vue"),
-);
-
-const BaseSearch = defineAsyncComponent(
-    () => import("./components/UI/BaseSearch.vue"),
 );
 
 const BaseSpinner = defineAsyncComponent(
@@ -54,10 +38,6 @@ const BaseFadeOnScroll = defineAsyncComponent(
 
 const BaseMiniDialog = defineAsyncComponent(
     () => import("./components/UI/BaseMiniDialog.vue"),
-);
-
-const BaseCartDrawer = defineAsyncComponent(
-    () => import("./components/UI/BaseCartDrawer.vue"),
 );
 
 const BaseBreadcrumb = defineAsyncComponent(
@@ -150,18 +130,13 @@ async function loadMessages(locale) {
 
     app.component("base-card", BaseCard);
     app.component("base-button", BaseButton);
-    app.component("base-button-outline", BaseButtonOutline);
-    app.component("base-box", BaseBox);
     app.component("base-slider", BaseSlider);
     app.component("base-logo", BaseLogo);
-    app.component("base-mobile-menu-modal", BaseMobileMenuModal);
     app.component("base-dialog", BaseDialog);
-    app.component("base-search", BaseSearch);
     app.component("base-spinner", BaseSpinner);
     app.component("base-social-icons", BaseSocialIcons);
     app.component("base-fade-on-scroll", BaseFadeOnScroll);
     app.component("base-mini-dialog", BaseMiniDialog);
-    app.component("base-cart-drawer", BaseCartDrawer);
     app.component("base-breadcrumb", BaseBreadcrumb);
     app.component("Splide", Splide);
     app.component("SplideSlide", SplideSlide);
@@ -177,18 +152,13 @@ async function loadMessages(locale) {
 
     productsApp.component("base-card", BaseCard);
     productsApp.component("base-button", BaseButton);
-    productsApp.component("base-button-outline", BaseButtonOutline);
-    productsApp.component("base-box", BaseBox);
     productsApp.component("base-slider", BaseSlider);
     productsApp.component("base-logo", BaseLogo);
-    productsApp.component("base-mobile-menu-modal", BaseMobileMenuModal);
     productsApp.component("base-dialog", BaseDialog);
-    productsApp.component("base-search", BaseSearch);
     productsApp.component("base-spinner", BaseSpinner);
     productsApp.component("base-social-icons", BaseSocialIcons);
     productsApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     productsApp.component("base-mini-dialog", BaseMiniDialog);
-    productsApp.component("base-cart-drawer", BaseCartDrawer);
     productsApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -203,18 +173,13 @@ async function loadMessages(locale) {
 
     productPageApp.component("base-card", BaseCard);
     productPageApp.component("base-button", BaseButton);
-    productPageApp.component("base-button-outline", BaseButtonOutline);
-    productPageApp.component("base-box", BaseBox);
     productPageApp.component("base-slider", BaseSlider);
     productPageApp.component("base-logo", BaseLogo);
-    productPageApp.component("base-mobile-menu-modal", BaseMobileMenuModal);
     productPageApp.component("base-dialog", BaseDialog);
-    productPageApp.component("base-search", BaseSearch);
     productPageApp.component("base-spinner", BaseSpinner);
     productPageApp.component("base-social-icons", BaseSocialIcons);
     productPageApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     productPageApp.component("base-mini-dialog", BaseMiniDialog);
-    productPageApp.component("base-cart-drawer", BaseCartDrawer);
     productPageApp.component("base-breadcrumb", BaseBreadcrumb);
     productPageApp.component("Splide", Splide);
     productPageApp.component("SplideSlide", SplideSlide);
@@ -230,18 +195,13 @@ async function loadMessages(locale) {
 
     contactUsApp.component("base-card", BaseCard);
     contactUsApp.component("base-button", BaseButton);
-    contactUsApp.component("base-button-outline", BaseButtonOutline);
-    contactUsApp.component("base-box", BaseBox);
     contactUsApp.component("base-slider", BaseSlider);
     contactUsApp.component("base-logo", BaseLogo);
-    contactUsApp.component("base-mobile-menu-modal", BaseMobileMenuModal);
     contactUsApp.component("base-dialog", BaseDialog);
-    contactUsApp.component("base-search", BaseSearch);
     contactUsApp.component("base-spinner", BaseSpinner);
     contactUsApp.component("base-social-icons", BaseSocialIcons);
     contactUsApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     contactUsApp.component("base-mini-dialog", BaseMiniDialog);
-    contactUsApp.component("base-cart-drawer", BaseCartDrawer);
     contactUsApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -255,18 +215,13 @@ async function loadMessages(locale) {
 
     aboutUsApp.component("base-card", BaseCard);
     aboutUsApp.component("base-button", BaseButton);
-    aboutUsApp.component("base-button-outline", BaseButtonOutline);
-    aboutUsApp.component("base-box", BaseBox);
     aboutUsApp.component("base-slider", BaseSlider);
     aboutUsApp.component("base-logo", BaseLogo);
-    aboutUsApp.component("base-mobile-menu-modal", BaseMobileMenuModal);
     aboutUsApp.component("base-dialog", BaseDialog);
-    aboutUsApp.component("base-search", BaseSearch);
     aboutUsApp.component("base-spinner", BaseSpinner);
     aboutUsApp.component("base-social-icons", BaseSocialIcons);
     aboutUsApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     aboutUsApp.component("base-mini-dialog", BaseMiniDialog);
-    aboutUsApp.component("base-cart-drawer", BaseCartDrawer);
     aboutUsApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -283,21 +238,13 @@ async function loadMessages(locale) {
 
     categoryProductsApp.component("base-card", BaseCard);
     categoryProductsApp.component("base-button", BaseButton);
-    categoryProductsApp.component("base-button-outline", BaseButtonOutline);
-    categoryProductsApp.component("base-box", BaseBox);
     categoryProductsApp.component("base-slider", BaseSlider);
     categoryProductsApp.component("base-logo", BaseLogo);
-    categoryProductsApp.component(
-        "base-mobile-menu-modal",
-        BaseMobileMenuModal,
-    );
     categoryProductsApp.component("base-dialog", BaseDialog);
-    categoryProductsApp.component("base-search", BaseSearch);
     categoryProductsApp.component("base-spinner", BaseSpinner);
     categoryProductsApp.component("base-social-icons", BaseSocialIcons);
     categoryProductsApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     categoryProductsApp.component("base-mini-dialog", BaseMiniDialog);
-    categoryProductsApp.component("base-cart-drawer", BaseCartDrawer);
     categoryProductsApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -312,18 +259,13 @@ async function loadMessages(locale) {
 
     tagProductsApp.component("base-card", BaseCard);
     tagProductsApp.component("base-button", BaseButton);
-    tagProductsApp.component("base-button-outline", BaseButtonOutline);
-    tagProductsApp.component("base-box", BaseBox);
     tagProductsApp.component("base-slider", BaseSlider);
     tagProductsApp.component("base-logo", BaseLogo);
-    tagProductsApp.component("base-mobile-menu-modal", BaseMobileMenuModal);
     tagProductsApp.component("base-dialog", BaseDialog);
-    tagProductsApp.component("base-search", BaseSearch);
     tagProductsApp.component("base-spinner", BaseSpinner);
     tagProductsApp.component("base-social-icons", BaseSocialIcons);
     tagProductsApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     tagProductsApp.component("base-mini-dialog", BaseMiniDialog);
-    tagProductsApp.component("base-cart-drawer", BaseCartDrawer);
     tagProductsApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -337,18 +279,13 @@ async function loadMessages(locale) {
 
     checkoutApp.component("base-card", BaseCard);
     checkoutApp.component("base-button", BaseButton);
-    checkoutApp.component("base-button-outline", BaseButtonOutline);
-    checkoutApp.component("base-box", BaseBox);
     checkoutApp.component("base-slider", BaseSlider);
     checkoutApp.component("base-logo", BaseLogo);
-    checkoutApp.component("base-mobile-menu-modal", BaseMobileMenuModal);
     checkoutApp.component("base-dialog", BaseDialog);
-    checkoutApp.component("base-search", BaseSearch);
     checkoutApp.component("base-spinner", BaseSpinner);
     checkoutApp.component("base-social-icons", BaseSocialIcons);
     checkoutApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     checkoutApp.component("base-mini-dialog", BaseMiniDialog);
-    checkoutApp.component("base-cart-drawer", BaseCartDrawer);
     checkoutApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -362,18 +299,13 @@ async function loadMessages(locale) {
 
     cartApp.component("base-card", BaseCard);
     cartApp.component("base-button", BaseButton);
-    cartApp.component("base-button-outline", BaseButtonOutline);
-    cartApp.component("base-box", BaseBox);
     cartApp.component("base-slider", BaseSlider);
     cartApp.component("base-logo", BaseLogo);
-    cartApp.component("base-mobile-menu-modal", BaseMobileMenuModal);
     cartApp.component("base-dialog", BaseDialog);
-    cartApp.component("base-search", BaseSearch);
     cartApp.component("base-spinner", BaseSpinner);
     cartApp.component("base-social-icons", BaseSocialIcons);
     cartApp.component("base-fade-on-scroll", BaseFadeOnScroll);
     cartApp.component("base-mini-dialog", BaseMiniDialog);
-    cartApp.component("base-cart-drawer", BaseCartDrawer);
     cartApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -387,10 +319,8 @@ async function loadMessages(locale) {
 
     shippingReturnsApp.component("base-button", BaseButton);
     shippingReturnsApp.component("base-logo", BaseLogo);
-    shippingReturnsApp.component("base-search", BaseSearch);
     shippingReturnsApp.component("base-social-icons", BaseSocialIcons);
     shippingReturnsApp.component("base-fade-on-scroll", BaseFadeOnScroll);
-    shippingReturnsApp.component("base-cart-drawer", BaseCartDrawer);
     shippingReturnsApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -404,10 +334,8 @@ async function loadMessages(locale) {
 
     privacyPolicyApp.component("base-button", BaseButton);
     privacyPolicyApp.component("base-logo", BaseLogo);
-    privacyPolicyApp.component("base-search", BaseSearch);
     privacyPolicyApp.component("base-social-icons", BaseSocialIcons);
     privacyPolicyApp.component("base-fade-on-scroll", BaseFadeOnScroll);
-    privacyPolicyApp.component("base-cart-drawer", BaseCartDrawer);
     privacyPolicyApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
@@ -421,10 +349,8 @@ async function loadMessages(locale) {
 
     termsApp.component("base-button", BaseButton);
     termsApp.component("base-logo", BaseLogo);
-    termsApp.component("base-search", BaseSearch);
     termsApp.component("base-social-icons", BaseSocialIcons);
     termsApp.component("base-fade-on-scroll", BaseFadeOnScroll);
-    termsApp.component("base-cart-drawer", BaseCartDrawer);
     termsApp.component("base-breadcrumb", BaseBreadcrumb);
 
     // Fontawesome Icons Component
