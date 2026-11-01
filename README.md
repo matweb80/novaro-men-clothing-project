@@ -7,16 +7,16 @@ A full-stack men's clothing e-commerce platform built with Laravel and Vue.js, f
 ## Screenshots
 
 ### 1. Home Page
-![NOVARO Home Page](screenshots/home-page.png)
+![NOVARO Home Page](screenshots/home-page.jpg)
 
 ### 2. Product Filtering
-![Product Filtering](screenshots/product-filters.png)
+![Product Filtering](screenshots/product-filters.jpg)
 
 ### 3. Product Details
-![Product Details](screenshots/product-details.png)
+![Product Details](screenshots/product-details.jpg)
 
 ### 4. Admin Dashboard
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](screenshots/admin-dashboard.jpg)
 
 ## Features
 
