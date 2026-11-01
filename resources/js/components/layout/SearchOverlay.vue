@@ -61,33 +61,6 @@ const trendingProducts = computed(() => {
   ).filter(Boolean);
 });
 
-// const categoryPath = (tree, path = [], query) => {
-//   let out = [];
-//   tree.forEach((node) => {
-//     const fullPath = path.concat([node.name]);
-//     out.push({ id: node.id, name: node.name, path: fullPath.join(" / ") });
-//     if (/^{`$quer`}$/.test(node.name)) {
-//       if (node.child && node.child.length) {
-//         out = out.concat(categoryPath(node.child, fullPath));
-//       }
-//     }
-//   });
-//   return out;
-// };
-
-// const categoryPath(mat) = computed(() => {
-//   let out = [];
-//   let path = [];
-//   matchedCategories.value.forEach((node) => {
-//     const fullPath = path.concat([node.name]);
-//     out.push({ id: node.id, name: node.name, path: fullPath.join(" / ") });
-//     if (node.child && node.child.length) {
-//       out = out.concat(categoryPath(node.child, fullPath));
-//     }
-//   });
-//   return out;
-// });
-
 const categoryPath = (tree, path = []) => {
   let out = [];
   tree.forEach((node) => {

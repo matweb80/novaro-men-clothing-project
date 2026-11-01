@@ -13,16 +13,8 @@ const BaseSection = defineAsyncComponent(
     () => import("./components/UI/BaseSection.vue"),
 );
 
-const BaseSearch = defineAsyncComponent(
-    () => import("../components/UI/BaseSearch.vue"),
-);
-
 const BaseLogo = defineAsyncComponent(
     () => import("../components/UI/BaseLogo.vue"),
-);
-
-const BaseButtonOutline = defineAsyncComponent(
-    () => import("../components/UI/BaseButtonOutline.vue"),
 );
 
 const BaseSocialIcons = defineAsyncComponent(
@@ -36,11 +28,6 @@ const BaseSpinner = defineAsyncComponent(
 const BaseDialog = defineAsyncComponent(
     () => import("../components/UI/BaseDialog.vue"),
 );
-
-const BaseCartDrawer = defineAsyncComponent(
-    () => import("../components/UI/BaseCartDrawer.vue"),
-);
-
 
 // Fontawesome Icons
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -79,13 +66,10 @@ async function loadMessages(locale) {
 
     app.component("base-button", BaseButton);
     app.component("base-section", BaseSection);
-    app.component("base-search", BaseSearch);
     app.component("base-logo", BaseLogo);
-    app.component("base-button-outline", BaseButtonOutline);
     app.component("base-social-icons", BaseSocialIcons);
     app.component("base-spinner", BaseSpinner);
     app.component("base-dialog", BaseDialog);
-    app.component("base-cart-drawer", BaseCartDrawer);
 
     // Fontawesome Icons Component
     app.component("font-awesome-icon", FontAwesomeIcon);
